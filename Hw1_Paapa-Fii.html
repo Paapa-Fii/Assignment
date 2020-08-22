@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+    <html lang="en">
+       
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Contact Form</title>
+
+            <style>
+                body {
+                    background-color: lightgrey;
+                    padding: 10px;
+                }
+
+                form {
+                    width: 50%;
+                }
+                
+                .form-group{
+                    margin-bottom: 10px;
+                }
+
+                .form-group label {
+                    display: block;
+                    margin-bottom: 5px;
+                }
+
+                .form-group .input {
+                    border-radius: 3px;
+                    padding: 5px 10px;
+                    width: 100%;
+                    border: 1px solid #f1f1f1;
+                }
+
+                .form-group textarea {
+                    padding: 10px !important;
+                }
+
+                button {
+                    background-color: lightgreen;
+                    padding: 5px 10px;
+                    color: white;
+                    width: auto;
+                    height: 24px;
+                    border: 1px solid gray;
+                    border-radius: 2px;
+                }
+
+            </style>
+        </head>
+        
+        <body>
+            <form>
+                <div class="form-group" class="form-group">
+                    <label for="firstName" >First Name</label>
+                    <input class="input" type="text" id="firstName" placeholder="Your name.." name="firstName">
+                </div>
+
+                <div class="form-group" >
+                    <label for="lastName">Last Name</label>
+                    <input class="input" type="text" id="lastName" placeholder="Your last name.." name="lastName">
+                </div>
+            
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input class="input" type="text" id="country" Value="Australia" name="country">
+                </div>
+               
+            <div class="form-group">
+                <label for="sub">Subject</label>
+                <textarea class="input" name="sub" id="sub" placeholder="Write something.." cols="30" rows="10"></textarea>
+            </div>
+                
+                <div class="form-group">
+                    <button type="submit">Submit</button>
+                </div>
+
+            </form>
+        </body>
+    </html>
